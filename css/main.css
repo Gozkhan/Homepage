@@ -1,0 +1,93 @@
+* {margin: 0; padding:0;} /* 브라우저 기본 여백 제거 */
+.wrap{
+	margin: 0 auto; /* 좌우여백 자동배분 */
+	width:1000px;
+	font-family:sans-serif;
+}
+
+/* 
+로고 인라인블럭 a링크 홈, 박스쉐도우, (로그인창)인풋태그
+<iframe width="1052" height="592" src="https://www.youtube.com/embed/5xUH8r2twZY" frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+*/
+
+.logo {
+	display:flex;
+	position:relative;
+	font-size:30px;
+	justify-content:center; /* 수평정렬 */
+	align-items: baseline; /* 수직정렬 */
+}
+.logo img { /* 로고이미지 크기 설정 */
+	width:150px;
+	height:90px;
+}
+.dropdownmenu > li { /* 상단메뉴바 */
+	float:left;
+	position:relative;
+	background:black;
+	width:25%;
+	font-family:monospace;
+}
+.dropdownmenu li > a { /* 1단계 메뉴 글자 */
+	display:block;
+	font-size:20px;
+	font-weight:300;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+	color:white;
+}
+.dropdownmenu > li:hover {
+	background:#636363;
+}
+.dropdownmenu > li:hover > ul {
+	left:0;
+	top:50px;
+	background:#636363;
+}
+.dropdownmenu ul {
+	position:absolute;
+	top:-9999px;
+	z-index:9999px;
+	width:100%;
+}
+.dropdownmenu ul a {
+	display:block;
+	color:#ffffff;
+	font-size:14px;
+	line-height:50px;
+	background:#636363;
+	}
+.dropdownmenu ul a:hover {
+	color:#ffffff;
+	background:#878787;
+}
+ul {list-style:none;} /* 마크삭제 */
+a {text-decoration:none;} /* 밑줄 제거 */ 
+
+.clearfix::after { /* float 속성 해제 */
+	content:"";
+	clear:both;
+	display:block;
+}
+
+/* -------------------- 상단메뉴 -------------------- */
+.side {
+	border:2px solid black;
+	position:fixed;
+	right:10px;
+	bottom:30px;
+	margin-top: 50px;
+	width:160px;
+	height:60px;
+	background:#9e9e9e;
+	padding:10px;
+	color:white;
+	border-radius:10px;
+}
+.main-img img {
+	position: absolute;
+	width:1000px;
+	height:650px;
+}

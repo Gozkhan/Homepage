@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>미니 프로젝트</title>
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+  <script src="./js/main.js"></script>
+ </head>
+ <body>
+	<div class="wrap">
+		<div class="logo">
+			<!-- 로고, 홈페이지 제목 -->
+			<img src="img/logo.png" alt="logo">
+			<h1>강아지를 분양하는 사이트</h1>
+		</div>
+		<header id="top">
+			<!-- 상단 드롭메뉴 -->
+			<nav class="nv1 clearfix">
+				<ul class="dropdownmenu clearfix">
+					<li><a href="#">홈페이지 소개</a>
+						<ul>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="#">서비스</a>
+						<ul>
+							<li><a href="#">애견 미용</a></li>
+							<li><a href="#">펫 웨딩</a></li>
+							<li><a href="#">애견 카페</a></li>
+							<li><a href="#">반려견 장례</a></li>
+						</ul>
+					</li>
+					<li><a href="#">애견분양</a>
+						<ul>
+							<li><a href="#">대형견</a></li>
+							<li><a href="#">중형견</a></li>
+							<li><a href="#">소형견</a></li>
+						</ul>
+					</li>
+					<li><a href="#">고객센터</a>
+						<ul>
+							<li><a href="#">분양문의</a></li>
+							<li><a href="#">분양절차</a></li>
+							<li><a href="#">회원정보</a></li>
+							<li><a href="#">회원탈퇴</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 사이드바(로그인 메뉴) -->
+		<section class="side">
+			<form name="login" method="post" action="#.jsp">
+				<!-- 로그인 입력메뉴 -->
+				아이디 : <input type="text" name="id" size="10"><br>
+				비밀번호 : <input type="password" name="pw" size="8"><br>
+
+				<input type="button" value="로그인" onclick="login()"> <!-- 로그인 버튼메뉴 -->
+				<input type="button" value="초기화" onclick="reset()">
+			</form>
+		</section>
+
+		<section id="main-content">
+			<!-- 본문 내용 -->
+			<article class="at1">
+				<h3>대형견 분양<h3>
+					<div class="big">
+						<figure>
+							<img src="./img/at1-1/jpg" alt="대형견1">
+							<figcaption>품종 : 골든리트리버<br>성별 : 남<br></figcaption>
+						</figure>
+						<figure>
+							<img src="./img/at1-2.jpg" alt="대형견2">
+							<figcaption>품종 : 허스키<br>성별 : 여</figcaption>
+						</figure>
+						<figure>
+							<img src=".img/at1-3.jpg" alt="대형견3">
+							<figcaption>품종 : 차우차우<br>성별 : 남</figcaption>
+						</figure>
+					</div>
+			</article>
+			<article class="at2">
+				<h3>중형견 분양</h3>
+				<div class="middle">
+					<figure>
+						<img src="./img/at2-1.jpg" alt="중형견1">
+						<figcaption>품종 : 닥스훈트<br>성별 : 여</figcaption>
+					</figure>
+					<figure>							
+						<img src="./img/at2-2.jpg" alt="중형견2">
+						<figcaption>품종 : 비글<br>성별 : 여</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/at2-3.jpg" alt="중형견3">
+						<figcaption>품종 : 잭러셀테리어<br>성별 : 남</figcaption>
+					</figure>
+				</div>
+			</article>
+			<article class="at3">
+				<h3>소형견 분양</h3>
+				<div class="small">
+					<figure>
+						<img src="./img/at3-1.jpg" alt="소형견1">
+						<figcaption>품종 : 말티즈><br>성별 : 남</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/at3-2.jpg" alt="소형견2">
+						<figcaption>품종 : 포메라니안<br>성별 : 여</figcaption>
+					</figure>
+					<figure>
+						<img src="./img/at3-3.jpg" alt="소형견3">
+						<figure>품종 : 요크셔테리어<br>성별 : 여</figure>
+					</figure>
+				</div>
+			</article>
+		</section>
+
+		<!-- 메인 이미지 -->
+		<section class="main-img">
+			<div class="cycle-slideshow">
+				<img src="./img/main1.jpg" alt="main-img1">
+				<img src="./img/main2.jpg" alt="main-img2">
+				<img src="./img/main3.jpg" alt="main-img3">
+			</div>
+		</section>
+
+		<div id="sub-content">
+			<!-- 서브 내용(분양후기, 영상, -->
+			<article>
+				<h3>분양후기</h3>
+			</article>
+
+			<article>
+				<h3>동영상</h3>
+			</article>
+		</div>
+
+		<footer id="foot">
+			<!-- 하단메뉴 -->
+			<nav>
+				<ul>
+					<li>Call Number</li>
+					<li>Address</li>
+					<li>E-mail</li>
+					<li>이용약관</li>
+					<li>개인정보 처리방침</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+ </body>
+</html>
